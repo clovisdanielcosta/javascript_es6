@@ -1,6 +1,6 @@
 const arr = [1, 2, 3, 4];
 
-const arrLenght = arr.unshift('acelora');
+const arrLenght = arr.unshift('acelora', 'banana');
 
 console.log(arrLenght);
 
