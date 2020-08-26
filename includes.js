@@ -1,4 +1,4 @@
-const ar = [1, 2, 3, 4, 5];
+const ar = [1, 2, 3, 8];
 
 const arItemOne = ar.includes(7);
 console.log(arItemOne);
