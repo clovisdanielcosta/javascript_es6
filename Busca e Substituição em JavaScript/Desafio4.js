@@ -1,7 +1,4 @@
 let cases = parseInt(gets());
-
-let cases = parseInt(gets());
-
 let hands = [
     'tesoura papel',
     'papel pedra',
