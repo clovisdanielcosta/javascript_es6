@@ -1,25 +1,48 @@
-//Ordenando fila de banco por SMS do maior pelo menor
-let cases = parseInt(gets()); //Recebe quantidade de casos
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
-for (let i = 1; i <= cases; i++) {
+public class BankStack {
 
-    let stillInPosition = 0; //Conta os não alterados
-    let numCustomers = parseInt(gets());
-    let arriving = (gets()).split(" ").map((arriving) => arriving); //Recebe os clientes
-    //let arr1 = arriving.map((arriving) => arriving);
-    let stack = arriving.map((arriving) => arriving).sort(sortNum);
+	public static void main(String[] args) {
 
-    //Ordenando em ordem descrescente e númerica
-    function sortNum(a, b){
-        return (b - a) //Função auxiliar para o array poder serja ordenado numericamente.
-    }
+		Scanner reader = new Scanner(System.in);
 
-    //Comparando valores para pegar os não alterados
-    for (let j = 0; j < numCustomers; j++) {
-        if ( arriving[j] === stack[j]) {
-            stillInPosition++;
-        };
-    };
-    //Saída dos não alterados
-    console.log(stillInPosition);
-};
+		int cases = reader.nextInt();
+		
+		for (int i = 0; i < cases; i++) {
+		
+		
+			List<Integer> arrived = new ArrayList<>();
+		  List<Integer> orderedStack = new ArrayList<>();
+			int smsNumbers = reader.nextInt();
+			
+			reader.nextLine();
+			
+			String[] arriving = reader.nextLine().split(" ");
+			
+			for (int j = 0; j < arriving.length; j++) {
+				arrived.add(Integer.parseInt(arriving[j]));
+			}
+			
+			orderedStack.addAll(arrived);
+			orderedStack.sort(Collections.reverseOrder());
+			
+			int stillInPosition = 0;
+			
+			for (int j = 0; j < smsNumbers; j++) {
+				if(arrived.get(j) == orderedStack.get(j)) {
+					stillInPosition++;
+				}
+			}
+			
+			System.out.println(stillInPosition);
+			
+			arrived.clear();
+			orderedStack.clear();
+		}
+
+	}
+
+}
