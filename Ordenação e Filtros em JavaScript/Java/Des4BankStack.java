@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class BankStack {
+public class Des4BankStack {
 
 	public static void main(String[] args) {
 

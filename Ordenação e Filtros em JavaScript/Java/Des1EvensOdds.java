@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class EvensOdds {
+public class Des1EvensOdds {
 
     public static void main(String[] args) {
 

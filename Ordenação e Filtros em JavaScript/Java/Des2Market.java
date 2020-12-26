@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.HashSet;
 import java.util.List;
 
-public class Market {
+public class Des2Market {
 
     public static void main(String[] args) {
 
