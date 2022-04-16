@@ -7,4 +7,4 @@ function relogio(s){
     return(s);
 }
 
-relogio("07:05:45PM");
+console.log(relogio("07:05:45PM"));
