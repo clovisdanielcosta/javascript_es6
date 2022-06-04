@@ -7,15 +7,6 @@ function maxMinUnfairness(k, arr){
 
       while(i <= arr.length - k){
 
-            // let myArr = [];
-            
-            // for(let j = i; j < i + k; j++){
-            //       if(j < arr.length){
-            //             myArr.push(arr[j]);
-            //       }
-            // }
-
-            //let unfairness = myArr[k-1] - myArr[0];
             let unfairness = arr[i + k-1] - arr[i];
             
             if(unfairness < minUnfairness || minUnfairness === 0)
