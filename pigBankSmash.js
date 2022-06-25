@@ -1,3 +1,20 @@
+/* PIGGY BANKS TO SMASH FOR BUY A LEGO 
+(FROM Google Mock Interview)
+youtube: https://youtu.be/wOI6P9-QRNQ
+
+Chalenge: 
+Given an array of piggy banks, find the two elements needed to buy a Lego with a random cost.
+The ammount of 'Google Dollars' in each piggy bank is equal to its index.
+
+Rules: 
+1 - Two piggy banks need to be smashed;
+2 - Make no sense smash piggy bank 0 (empty); 
+3 - Obviously, cannot smash the same piggy bank twice.
+
+Input:
+ARRAY[INTEGER] piggyBankList;
+INTEGER cost  */
+
 function piggyBankSmash(piggyBankList, cost){ 
   
     let maxPiggyBanks = Math.max(...piggyBankList);
@@ -23,21 +40,7 @@ function testCost(lengthListPiggyBanks, cost){
     console.log(piggyBankSmash(piggyBankList, cost));
 }
 
-/* PIGGY BANK SMASH TO BUY LEGO
-Rules: 
-1 - At least 2 piggy banks 
-    to smash;
-2 - Make no sense smash piggy 
-    bank 0 (empty); 
-3 - Obviously, cannot smash 
-    the same piggy bank twice.
-
-Constraints:
-piggyBankList INTEGER ARRAY;
-cost INTEGER. */
-
 // Tests
-
 testCost(100, -1);
 testCost(100, 0);
 testCost(100, 1);
