@@ -1,7 +1,7 @@
 let i = 0;
 
 do {
-    i += 1;
+    i += 23;
     console.log(i);
     
-} while (i < 5);
+} while (i < 200);
